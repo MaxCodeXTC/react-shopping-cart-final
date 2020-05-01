@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
 // var data = require("./build/data.json");
-// mongodb+srv://react-shopping-cart:react12345@cluster0-nb7oz.mongodb.net/react-shopping-cart?retryWrites=true&w=majority
 const app = express();
 app.use(bodyParser.json());
 mongoose.connect(
