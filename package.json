@@ -43,9 +43,6 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  },
   "engines": {
     "node": "12.4.0",
     "npm": "6.9.0"

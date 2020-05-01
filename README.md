@@ -32,6 +32,7 @@
       1. express
       2. body-parser
       3. Environment Variables
+      4. nodemon
    5. MongoDB
       1. mongoose
       2. shortid
@@ -83,16 +84,17 @@
 6. Filter Component
 7. Cart Component
 8. Create Products Backend
-   1. Add server.js
-   2. install express body-parser mongoose
-   3. app = express()
-   4. app.use(bodyParser.json())
-   5. mongoose.connect()
-   6. create Product model
-   7. app.post("/api.products")
-   8. Postman send post request
-   9. route.get("/api/products")
-   10. route.delete("/api/products/:id")
+   1. Install nodemon globally
+   2. Add server.js
+   3. install express body-parser mongoose
+   4. app = express()
+   5. app.use(bodyParser.json())
+   6. mongoose.connect()
+   7. create Product model
+   8. app.post("/api.products")
+   9. Postman send post request
+   10. route.get("/api/products")
+   11. route.delete("/api/products/:id")
 9. Add Redux
 10. Add Redux To Filter
 11. Add Redux To Cart
