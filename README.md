@@ -134,9 +134,11 @@
     9. Select your apps, open Setting Tab and click Reveal Config Vars
     10. Add key MONGODB_URL
     11. Enter copied connection string from the previous step
-    12. app.use("/", express.static(\_\_dirname + "/build"));
-    13. app.get("/", (req, res) => res.sendFile(\_\_dirname + "/build/index.html"));
-    14. git add . && git commit -m "publish"
-    15. git push heroku
+    12. Update database name and username and password
+    13. Add key NODE_MODULES_CACHE and value false
+    14. app.use("/", express.static(\_\_dirname + "/build"));
+    15. app.get("/", (req, res) => res.sendFile(\_\_dirname + "/build/index.html"));
+    16. git add . && git commit -m "publish"
+    17. git push heroku
 
 18. Future Works
