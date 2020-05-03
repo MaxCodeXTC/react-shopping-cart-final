@@ -76,6 +76,7 @@ a:hover {
 .sidebar {
   flex: 1 20rem;
 }
+/* Filter */
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -88,7 +89,7 @@ a:hover {
 .filter-size {
   flex: 1;
 }
-
+/* Products */
 .products {
   display: flex;
   justify-content: center;
@@ -115,10 +116,6 @@ a:hover {
   max-width: 37rem;
   max-height: 37rem;
 }
-.product-name {
-  font-size: 2rem;
-  font-weight: bold;
-}
 .product-price {
   display: flex;
   justify-content: space-between;
@@ -132,9 +129,7 @@ a:hover {
 .product-price div {
   font-size: 2rem;
 }
-/* .ReactModal__Content {
-  width: 80%;
-} */
+
 .product-details {
   display: flex;
   flex-wrap: wrap;

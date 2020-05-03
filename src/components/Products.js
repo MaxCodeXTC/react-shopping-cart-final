@@ -36,7 +36,6 @@ class Products extends Component {
           </a>
           <div className="product-price">
             <div>{util.formatCurrency(product.price)}</div>
-
             <button
               className="button primary"
               onClick={(e) =>
