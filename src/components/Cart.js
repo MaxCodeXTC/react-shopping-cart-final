@@ -99,7 +99,7 @@ class Cart extends Component {
                       </div>
                       <div className="cart-item">
                         <div>{item.title}</div>
-                        <div className="f-right">
+                        <div className="right">
                           {item.count} X {util.formatCurrency(item.price)}
                           <button
                             className="button secondary"

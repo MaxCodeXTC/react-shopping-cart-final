@@ -192,13 +192,10 @@ a:hover {
 .cart-items li > div {
   padding: 0.5rem;
 }
-.cart-item {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.cart-items li > div:last-child {
+  flex: 1;
 }
-.f-right {
+.right {
   text-align: right;
 }
 
