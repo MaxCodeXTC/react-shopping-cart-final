@@ -6,12 +6,12 @@ import util from "../util";
 import { addToCart } from "../actions/cartActions";
 import { fetchProducts } from "../actions/productActions";
 import Modal from "react-modal";
-Modal.setAppElement("#root");
+
 class Products extends Component {
   constructor() {
     super();
     this.state = {
-      modalIsOpen: false,
+      product: null,
     };
   }
   componentDidMount() {

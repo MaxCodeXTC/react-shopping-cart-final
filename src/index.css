@@ -129,7 +129,7 @@ a:hover {
 .product-price div {
   font-size: 2rem;
 }
-
+/* Product Details */
 .product-details {
   display: flex;
   flex-wrap: wrap;
@@ -153,6 +153,7 @@ a:hover {
   z-index: 1000;
 }
 
+/* Button */
 .button {
   padding: 1rem;
   border: 0.1rem #808080 solid;
