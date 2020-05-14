@@ -6,14 +6,17 @@ const bodyParser = require("body-parser");
 // var data = require("./build/data.json");
 const app = express();
 app.use(bodyParser.json());
+
+// deploy
+app.use("/", express.static(__dirname + "/build"));
+app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"));
+
+// mongodb
 mongoose.connect(
   process.env.MONGODB_URL || "mongodb://localhost/react-shopping-cart",
   { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true }
 );
-app.use("/", express.static(__dirname + "/build"));
-app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"));
 
-// products
 const Product = mongoose.model(
   "product",
   new mongoose.Schema({
@@ -52,6 +55,7 @@ app.delete("/api/products/:id", async (req, res) => {
   });
   res.send(deletedProduct);
 });
+
 // orders
 const Order = mongoose.model(
   "order",

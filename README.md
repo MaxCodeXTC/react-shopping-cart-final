@@ -229,23 +229,37 @@ Demo: https://react-shopping-cart-final.herokuapp.com/
 10. Create Products Backend
     1. Install nodemon globally
     2. Add server.js
-    3. install express body-parser mongoose
-    4. app = express()
-    5. app.use(bodyParser.json())
-    6. mongoose.connect()
-    7. create Product model
-    8. app.post("/api.products")
-    9. Postman send post request
-    10. route.get("/api/products")
-    11. route.delete("/api/products/:id")
+    3. Install express body-parser mongoose shortid
+    4. Install MongoDB
+    5. app = express()
+    6. app.use(bodyParser.json())
+    7. mongoose.connect()
+    8. create Product model
+    9. app.post("/api.products")
+    10. Postman send post request
+    11. route.get("/api/products")
+    12. route.delete("/api/products/:id")
 11. Add Redux
+    1. what is redux (diagram)
+    2. npm install redux react-redux
+    3. store.js
+    4. import redux
+    5. set cartItems from localstorage
+    6. set initial state
+    7. create reducer
+    8. create store
+    9. App.js
+    10. import store
+    11. wrap it in Provider
+    12. cart.js
+    13. connect to store
+    14.
 12. Add Redux To Filter
 13. Add Redux To Cart
-14. Add Animation
-15. Create Order
-16. Add React Router
-17. Add Admin Section
-18. Connect To Cloud MongoDB Atlas
+14. Create Order
+15. Add React Router
+16. Add Admin Section
+17. Connect To Cloud MongoDB Atlas
     1. Create an account on https://www.mongodb.com/cloud
     2. Login to https://cloud.mongodb.com/
     3. Add database user
@@ -264,7 +278,7 @@ Demo: https://react-shopping-cart-final.herokuapp.com/
     16. Step 2: Deploy On Heroku
     17. Create git repository in amazona folder using git init
     18. Create Heroku Account at heroku.com
-19. Install Heroku CLI
+18. Install Heroku CLI
 
     1. heroku login
     2. heroku apps:create react-shopping-cart-final
@@ -284,4 +298,4 @@ Demo: https://react-shopping-cart-final.herokuapp.com/
     16. git add . && git commit -m "publish"
     17. git push heroku
 
-20. Future Works
+19. Future Works
